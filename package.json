@@ -1,0 +1,32 @@
+{
+  "name": "multicall-decode",
+  "version": "1.0.0",
+  "description": "EVM multicall calldata decoder",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hroussille/multicall-decode.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Web3",
+    "EVM",
+    "Multicall"
+  ],
+  "author": "hroussille",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hroussille/multicall-decode/issues"
+  },
+  "homepage": "https://github.com/hroussille/multicall-decode#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6"
+  }
+}
