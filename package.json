@@ -1,6 +1,6 @@
 {
   "name": "multicall-decode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "EVM multicall calldata decoder",
   "main": "index.js",
   "scripts": {
