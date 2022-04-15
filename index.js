@@ -19,8 +19,7 @@ function extractParametersFromSignature(signature) {
   return params;
 }
 
-async function decode(calldata) {
-  const calls = web3.eth.abi.decodeParameter("bytes[]", calldata);
+async function decodeCalls(calls) {
   let result = [];
 
   for (const [callId, call] of calls.entries()) {
@@ -70,6 +69,12 @@ async function decode(calldata) {
   return result;
 }
 
+async function decodeRaw(calldata) {
+  const calls = web3.eth.abi.decodeParameter("bytes[]", calldata);
+  return decodeCalls(calls);
+}
+
 module.exports = {
-  decode: decode,
+  decodeRaw: decodeRaw,
+  decodeCalls: decodeCalls,
 };
